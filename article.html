@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="article.css">
+
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="home-button">Home</a>
+    <img id="article-image" src="" alt="Article Image">
+    <h1 id="article-title"></h1>
+    <p id="article-description"></p>
+    <p class="author" id="article-author"></p>
+    <p class="published-date" id="article-publishedAt"></p>
+    <p class="source" id="article-source"></p>
+    <p class="url" id="article-url"></p>
+    <p id="article-content"></p>
+</div>
+
+<script>
+    // Function to get query parameter by name
+    function getQueryParam(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+    }
+
+    // Set the article content
+    document.getElementById('article-title').textContent = getQueryParam('title');
+    document.getElementById('article-description').textContent = getQueryParam('description');
+    document.getElementById('article-image').src = getQueryParam('image');
+    document.getElementById('article-author').textContent = `Author: ${getQueryParam('author')}`;
+    document.getElementById('article-publishedAt').textContent = `Published At: ${getQueryParam('publishedAt')}`;
+    document.getElementById('article-source').textContent = `Source: ${getQueryParam('source')}`;
+    document.getElementById('article-url').innerHTML = `Original URL: <a href="${getQueryParam('url')}" target="_blank">${getQueryParam('url')}</a>`;
+    document.getElementById('article-content').textContent = getQueryParam('content');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Central</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+
+        <div id="content">
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Enter keywords...">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div> 
+            <div class="cont"></div>
+            <p class="text" id="colored-text">News Central</p>
+            </div>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCategory(event, 'bbc-home')" id="defaultOpen">Home</button>
+                <button class="tablinks" onclick="openCategory(event, 'news')">News</button>
+                <button class="tablinks" onclick="openCategory(event, 'travel')">Travel</button>
+                <button class="tablinks" onclick="openCategory(event, 'sports')">Sports</button>
+                <button class="tablinks" onclick="openCategory(event, 'culture')">Culture</button>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div id="bbc-home" class="tabcontent">
+            <div class="section-header"></div>
+            <div class="news-container" id="bbc-home-trending"></div>
+            <div class="section-header">More from News Central </div>
+            <div class="news-container" id="bbc-home-more"></div>
+        </div>
+        <div id="news" class="tabcontent">
+            <div class="section-header">Trending News</div>
+            <div class="news-container" id="news-trending"></div>
+            <div class="section-header">More News</div>
+            <div class="news-container" id="news-more"></div>
+            <div class="section-header">Videos</div>
+            <div class="videos-container" id="news-videos"></div>
+            
+        </div>
+        <div id="travel" class="tabcontent">
+            <div class="section-header">Travel</div>
+            <div class="news-container" id="travel-trending"></div>
+            <div class="section-header">Adventures</div>
+            <div class="news-container" id="travel-more"></div>
+            <div class="section-header">Videos</div>
+            <div class="videos-container" id="travel-videos"></div>
+        </div>
+        <div id="sports" class="tabcontent">
+            <div class="section-header">Sports</div>
+            <div class="news-container" id="sports-trending"></div>
+            <div class="section-header">Active Life</div>
+            <div class="news-container" id="sports-more"></div>
+            <div class="section-header">Videos</div>
+            <div class="videos-container" id="sports-videos"></div>
+        </div>
+        <div id="culture" class="tabcontent">
+            <div class="section-header">Culture</div>
+            <div class="news-container" id="culture-trending"></div>
+            <div class="section-header">More Stories</div>
+            <div class="news-container" id="culture-more"></div>
+            <div class="section-header">Videos</div>
+            <div class="videos-container" id="culture-video"></div>
+        </div>
+        <div id="searched-news">
+            <div class="section-header">Search Results</div>
+            <div class="news-container" id="searched-news-container"></div>
+        </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
+

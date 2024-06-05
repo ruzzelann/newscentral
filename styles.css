@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9592924f; 
+}
+
+header {
+    color: #060606;
+    text-align: center;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+    background-color: #e2dbdb4d;
+    margin-left: 4%;
+    box-shadow: 2px 2px gray;
+}
+
+.section-header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    margin-left: 6em;
+}
+
+h2 {
+    margin-left: 3em;
+}
+
+#search-container {
+    margin-top: 0.5em;
+    float: right;
+    margin-right: 1em;
+    font-size: 20px;
+    
+}
+
+#search-container input {
+    margin-right: 0.1em;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#search-button{
+    background-color: #a68a8a;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.colored-text span {
+    padding-top: 2px;
+    margin: 1px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    
+}
+
+.text {
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'arial';
+    margin-left: 33vh;
+    letter-spacing: 0.5em;
+
+}
+
+
+main {
+    padding: 1em;
+    width: 90%;
+}
+
+section {
+    margin-bottom: 2em;
+    margin-left: 5em;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 0.5px solid #ccc;
+    background-color: #ffffff;
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.news-container, .videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.article, .video {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+.article img, .video img {
+    width: 100%;
+    height: auto;
+}
+
+.section-header {
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#searched-news {
+    display: none;
+    background-color: #111;
+}
